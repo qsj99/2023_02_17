@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03testavg.html</title>
+<style>
+    *{font-size: 20pt;}
+</style>
+
+<script>
+   function mypass(){
+     var kor=0,eng=0,hap=0,avg=0,msg='',grade='F',result='';
+
+     kor=90;  eng=85;
+     hap=kor+eng;
+     avg=hap/2 ;
+
+     //다중 if 
+     if(avg>=90) {grade='A';}
+     else if (avg>=80) {grade='B';} 
+     else if (avg>=70) {grade='C';} 
+     else if (avg>=60) {grade='D';} 
+     else {grade='F';} 
+
+     //단일 if 
+     if(avg>=70){ msg='축합격'; } 
+     else{ msg='재시험'; } 
+
+     result='<h2>총점 = '+hap+' 평균 = '+avg  ;
+     result= result+ '<br>'+'학점 = '+grade + ' 결과 = '+msg + '</h2>'  ;
+     document.getElementById('display').innerHTML=result;
+   }//end
+</script>
+</head>
+<body>
+    <div id="display">
+        <img src="./images/cake1.jpg" width="100" height="60">
+        <img src="./images/apple.png" width="100" height="60">
+        <img src="./images/apple.png" width="100" height="60">
+    </div>
+    <h2> 03testavg.html </h2>
+    <button onclick="mypass()">점수확인</button>
+    <button onclick="">숫자출력</button>
+</body>
+</html>

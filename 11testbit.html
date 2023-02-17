@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11testbit.html</title>
+<style>
+    *{font-size: 20pt;}
+</style>
+
+<script>
+   function mybit(){
+    const PI = 3.1415; //상수
+    const SM = '박진영 ';
+    document.write(PI, '<br>');
+    // PI = 7.8 ;  //상수에 값을 다시 할당 
+    // document.write(PI);
+    var temp2; //값 정의 안됨 
+    document.write(temp2, '<br>'); //undefined
+
+    var a=2, b=5, hap=0, gob=0, nmg=0;
+    //산술연산
+    hap = a+b ;
+    gob = a*b ;
+    nmg = a%b ;
+
+    //비트연산 
+    var bit1 = a & b ; 
+    var bit2 = a | b ; 
+    document.write(bit1, '<br>');
+    document.write(bit2, '<br>');
+
+   }//end
+</script>
+</head>
+<body>
+    <div id="display"></div>
+
+    <h2> 10testbit.html </h2>
+    <button onclick="mybit()">비트연산</button>
+</body>
+</html>
